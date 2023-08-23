@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Marcos">
+    <meta name="description" content="Revisão de HTML">
+    <meta name="keywords" content="sites, web, tags, html">
+    <title>Revisão HTML</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+<body background="./background.jpeg" style="background-size: cover; background-repeat: no-repeat;" text="#FFFFFF"
+    link="#00FF00" vlink="#8A2BE2" alink="#DC143C">
+    <div style="background-color: rgba(0,0,0,0.7); width: 100%; height: 100%;">
+        <header>
+            <h1 id="titulo1"> Este é o primeiro título </h1>
+            <br>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <section>
+            <h2>Este é um Título Secundário</h2>
+            <p>Este é um parágrafo normal com <strong> texto em negrito, pode ser usada a tag b também</strong>
+                <i>itálico</i>
+                <del>excluído</del>
+                <small>pequeno</small>
+                <q>Citação</q>
+                <mark>marcação</mark>
+                <sub>subscrito</sub>
+                <sup>superescrito</sup>
+                <abbr title="Hypertext Markup Language"> HTML Aabreviado </abbr>
+                <u>sublinhado</u>
+            </p>
+            <br>
+            <p>Este é outro parágrafo, com uma lista ordenada</p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <dl>
+                <dt> Banco de dados Relacionais </dt>
+                <dd>Oracle</dd>
+                <dd>SQL Server</dd>
+                <dt>Bancos de Dados não relacionais</dt>
+                <dd>MongoDB</dd>
+                <dd>Cassandra</dd>
+            </dl>
+            <table>
+                <p>Esta é uma tabela</p>
+                <thead>
+                    <tr>
+                        <th> Nome Pessoa </th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paulo</td>
+                        <td>paulo@geliandes.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Total de pessoas:
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <br><br>
+        <section>
+            <h3>Título 3</h3>
+            <p>Este é um bloco de texto sem o pré</p>
+            <pre>Este é um bloco de texto pré-formatado</pre>
+            <p>Este é um bloco de texto sem a tag pre</p>
+        </section>
+<br><br>
+        <section>
+            <h4>Título 4</h4>
+            <p>Usando caracteres para fazer a tabulação</p>
+            <p>&nbsp; *usando um caracter de tabulação</p>
+            <p>&ensp; *usando dois caracter de tabulação</p>
+            <p>&emsp; *usando três caracter de tabulação</p>
+        </section>
+
+        <section>
+            <h5>Título 5</h5>
+            <p>Exemplos de Links</p>
+            <a href="http://www.fatecsorocaba.edu.br">Site da Fatec Sorocaba</a>
+            <br>
+            <a href="mailto:paulo@geliandes.com">Envie um e-mail para a professora</a>
+            <p>Links Plus
+                As cores no link podem ser mudadas com os comandos link (CordonsLinks), alink(cor do link que foi pressionado), vlink(cor de um link já visato), podem ser colocados no Body.
+            </p>
+        </section>
+
+        <section>
+            <h6>Título 6</h6>
+            <p>Exemplos de Imagens</p>
+            <figure>
+                <img src="https://pbs.twimg.com/media/Ejm83lHXYAEZHWG.jpg"
+                    alt="Blessed"
+                    title="Blessed"
+                    width="200" />
+                    <figcaption>Legenda da imagem</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            <a href="#titulo1">Exemplo de âncora - link para o item 1</a>
+            <p>Aula Pweb - 2023</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
