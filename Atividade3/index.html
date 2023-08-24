@@ -1,142 +1,349 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Marcos">
-    <meta name="description" content="Revisão de HTML">
-    <meta name="keywords" content="sites, web, tags, html">
-    <title>Revisão HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>SEO (SEARCH ENGINE OPTIMIZATION)</title>
+    <meta name="description"
+        content="Explore os princípios do Search Engine Optimization (SEO) neste abrangente guia. Descubra como os mecanismos de busca operam, desde rastreamento até classificação, e aprenda técnicas para melhorar a visibilidade online. Saiba como otimizar títulos, descrições e muito mais para alcançar resultados excepcionais.">
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-    body {
-        overflow-x: hidden;
-    }
-</style>
 
-<body background="./background.jpeg" style="background-size: cover; background-repeat: no-repeat;" text="#FFFFFF"
-    link="#00FF00" vlink="#8A2BE2" alink="#DC143C">
-    <div style="background-color: rgba(0,0,0,0.7); width: 100%; height: 100%;">
-        <header>
-            <h1 id="titulo1"> Este é o primeiro título </h1>
-            <br>
-            <nav>
+
+
+<body>
+    <header>
+        <img src="./assets/logo.png" />
+    </header>
+    <main>
+        <div class="sumario">
+            <aside>
                 <ul>
-                    <li>
-                        <a href="#">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 3</a>
+                    <li><a href="#1">Introdução</a></li>
+                    <li><a href="#2">Como um mecanismo de busca funciona?</a></li>
+                    <li><a href="#3">SEO On-Pag</a></li>
+                    <li><a href="#4">Conclusão</a></li>
+                    <li><a href="#5">Referências</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="text-content">
+            <h1>SEO (SEARCH ENGINE OPTIMIZATION)</h1>
+            <section id="1">
+                <h2>1. Introdução</h2>
+                <p>SEO, ou <em>Search Engine Optimization</em>, é um conjunto de técnicas e estratégias cujo objetivo é
+                    fazer
+                    com
+                    que
+                    sites fiquem melhor posicionados nos mecanismos de busca, gerem mais reconhecimento de marca,
+                    aumentem o
+                    seu
+                    tráfego e gerem mais negócios. O SEO é responsável pelos resultados de busca orgânica,
+                    exclusivamente,
+                    não
+                    englobando anúncios e links patrocinados.</p>
+            </section>
+
+            <section id="2">
+                <h2>2. Como um mecanismo de busca funciona?</h2>
+                <p>Quando otimizamos um site para que ele fique melhor posicionado em um mecanismo de busca, como o
+                    Google,
+                    por
+                    exemplo, isso significa que implementamos neste site melhorias que obedecem a alguns critérios de
+                    qualidade
+                    específicos.</p>
+                <p>No caso do Google, que é o maior buscador do mundo e foco de quase toda estratégia de SEO, estes
+                    critérios
+                    correspondem principalmente às Diretrizes do Avaliador de Qualidade de Pesquisa, ou <em>Search
+                        Quality
+                        Evaluator
+                        Guidelines</em>: um documento que estabelece o que é um bom site e como tornar o seu site melhor
+                    através
+                    de
+                    ações práticas.</p>
+                <p>Mas, para que possamos fazer de um site um bom site, é preciso que compreendamos como um mecanismo de
+                    busca
+                    funciona.</p>
+                <p>O funcionamento de um mecanismo de busca se baseia em três pilares principais: <em>crawler</em>,
+                    <em>index</em>
+                    e <em>ranqueamento</em> (ou classificação).
+                </p>
+
+                <h3>2.1 Crawler: Como o Google encontra um site?</h3>
+                <p>O <em>crawler</em> é o principal ajudante de um mecanismo de busca. É ele quem rastreia, todos os
+                    dias,
+                    bilhões
+                    e bilhões de páginas na internet, compreendendo e enviando essas informações para uma grande base de
+                    dados
+                    chamada <em>index</em>.</p>
+                <p>Os <em>crawlers</em>, ou robôs, ou <em>spiders</em>, navegam pela web baixando as páginas à medida em
+                    que
+                    as
+                    visita, seguindo seus links e, desta forma, descobrindo mais e mais páginas a cada minuto. Além das
+                    páginas
+                    percorridas pela primeira vez, eles também revisitam as páginas com frequência, identificando
+                    atualizações
+                    ou
+                    quaisquer mudanças feitas em seus conteúdos.</p>
+                <p>O <em>crawler</em> mais popular de todos é o <em>Googlebot</em>, o rastreador do Google. E, se você
+                    pretende
+                    se
+                    tornar um especialista em SEO, deve fazer dele o visitante mais esperado e paparicado do seu site!
+                </p>
+                <p>Considerando que este é o robô mais importante da web, é importante lembrar um fato sobre ele: o
+                    <em>Googlebot</em>
+                    sempre rastreia primeiro a versão responsiva de um site, ou seja, ele sempre dá prioridade à versão
+                    mobile
+                    antes
+                    da versão desktop. Essa mudança ocorreu após a implementação da <em>Full Mobile-First Index</em>,
+                    atualização de
+                    algoritmo ocorrida em 2021 que passou a priorizar a navegação mobile.
+                </p>
+
+                <h3>2.2 Index: como o Google armazena as páginas?</h3>
+                <p>O <em>index</em>, ou índice de busca, é a grande base de dados de um buscador. Conforme dito no
+                    tópico
+                    acima,
+                    conforme o <em>crawler</em> vai conhecendo e rastreando mais e mais página na web, ele vai enviando
+                    as
+                    informações destas páginas para a grande estrutura que é o <em>index</em>. É por isso que, quando
+                    uma
+                    página
+                    passa a ser exibida na SERP, dizemos que ela foi “indexada” pelo Google — em outras palavras, ela
+                    passou
+                    a
+                    fazer
+                    parte do seu “banco de páginas”.</p>
+                <p>O <em>index</em> inclui todas as informações que o robô foi capaz de mapear e enviar a ele, o que
+                    torna o
+                    ranqueamento que acontecerá em seguida muito mais fácil. O <em>index</em> organiza as
+                    características
+                    das
+                    páginas
+                    para que, em seguida, o algoritmo possa classificá-las de acordo com suas diretrizes de qualidade.
+                </p>
+                <p>Entre as informações armazenadas pelo <em>index</em> estão:</p>
+                <ul>
+                    <li>Tipo de conteúdo: post de blog, artigo, notícia, imagem, vídeo, categoria de e-commerce, página
+                        de
+                        produto,
+                        etc;</li>
+                    <li>Palavras-chave: termos de pesquisa encontrados nesta página, campo semântico (termos
+                        relacionados) e
+                        pistas
+                        sobre o tema tratado ali;</li>
+                    <li>Recência: frequência com que uma página é atualizada (e a última vez que isso aconteceu);</li>
+                    <li>Dados estruturados: marcadores incluídos manualmente dentro de um código que só podem ser
+                        visualizados
+                        pelos
+                        robôs e contêm informações que os ajudam a compreender e a indexar as páginas de acordo com seus
+                        assuntos.
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <br>
-        <section>
-            <h2>Este é um Título Secundário</h2>
-            <p>Este é um parágrafo normal com <strong> texto em negrito, pode ser usada a tag b também</strong>
-                <i>itálico</i>
-                <del>excluído</del>
-                <small>pequeno</small>
-                <q>Citação</q>
-                <mark>marcação</mark>
-                <sub>subscrito</sub>
-                <sup>superescrito</sup>
-                <abbr title="Hypertext Markup Language"> HTML Aabreviado </abbr>
-                <u>sublinhado</u>
-            </p>
-            <br>
-            <p>Este é outro parágrafo, com uma lista ordenada</p>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
-            <dl>
-                <dt> Banco de dados Relacionais </dt>
-                <dd>Oracle</dd>
-                <dd>SQL Server</dd>
-                <dt>Bancos de Dados não relacionais</dt>
-                <dd>MongoDB</dd>
-                <dd>Cassandra</dd>
-            </dl>
-            <table>
-                <p>Esta é uma tabela</p>
-                <thead>
-                    <tr>
-                        <th> Nome Pessoa </th>
-                        <th>E-mail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Paulo</td>
-                        <td>paulo@geliandes.com</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">
-                            Total de pessoas:
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-        <br><br>
-        <section>
-            <h3>Título 3</h3>
-            <p>Este é um bloco de texto sem o pré</p>
-            <pre>Este é um bloco de texto pré-formatado</pre>
-            <p>Este é um bloco de texto sem a tag pre</p>
-        </section>
-<br><br>
-        <section>
-            <h4>Título 4</h4>
-            <p>Usando caracteres para fazer a tabulação</p>
-            <p>&nbsp; *usando um caracter de tabulação</p>
-            <p>&ensp; *usando dois caracter de tabulação</p>
-            <p>&emsp; *usando três caracter de tabulação</p>
-        </section>
+                <p>É claro que muitos outros pontos são mapeados e analisados pelo <em>index</em>, mas podemos listar
+                    estes
+                    como
+                    os
+                    principais.</p>
 
-        <section>
-            <h5>Título 5</h5>
-            <p>Exemplos de Links</p>
-            <a href="http://www.fatecsorocaba.edu.br">Site da Fatec Sorocaba</a>
-            <br>
-            <a href="mailto:paulo@geliandes.com">Envie um e-mail para a professora</a>
-            <p>Links Plus
-                As cores no link podem ser mudadas com os comandos link (CordonsLinks), alink(cor do link que foi pressionado), vlink(cor de um link já visato), podem ser colocados no Body.
-            </p>
-        </section>
+                <h3>2.3 Classificação: como o Google interpreta e ranqueia as páginas de um site?</h3>
+                <p>Após uma determinada página ser encontrada e armazenada no index, ela é minuciosamente avaliada pelo
+                    algoritmo, e
+                    a isso damos o nome de processo de classificação ou ranqueamento.</p>
+                <p>Para que ela possa ocupar uma posição na SERP e ser exibida aos usuários, seja ela na primeira ou na
+                    20ª
+                    página
+                    de resultados, ela precisa ser qualificada de acordo com os fatores de ranqueamento, e estima-se,
+                    hoje,
+                    que
+                    o
+                    Google utilize mais de 100 fatores de ranqueamento em seu processo de classificação.</p>
+                <p>Os fatores de ranqueamento são os critérios através dos quais os algoritmos avaliam uma página. E um
+                    algoritmo,
+                    como você deve saber, é uma fórmula, ou uma sequência de instruções, desenvolvida para executar
+                    cálculos
+                    ou
+                    tarefas. O Google ajusta seu algoritmo todos os dias para garantir que suas classificações sejam
+                    cada
+                    vez
+                    melhores e ele seja capaz de cumprir sua missão: organizar toda a informação do mundo e entregar os
+                    resultados
+                    mais relevantes.</p>
+                <p>Mas, além dos fatores de ranqueamento, há hoje um outro ponto de atenção muito importante quando
+                    falamos
+                    sobre
+                    classificação. Não basta que uma página esteja de acordo com todas as diretrizes de qualidade do
+                    Google
+                    —
+                    ela
+                    também precisa proporcionar uma boa experiência de usuário e responder à intenção de busca do seu
+                    público.
+                    Mas
+                    falaremos sobre isso com mais detalhes mais adiante.</p>
+            </section>
 
-        <section>
-            <h6>Título 6</h6>
-            <p>Exemplos de Imagens</p>
-            <figure>
-                <img src="https://pbs.twimg.com/media/Ejm83lHXYAEZHWG.jpg"
-                    alt="Blessed"
-                    title="Blessed"
-                    width="200" />
-                    <figcaption>Legenda da imagem</figcaption>
-            </figure>
-        </section>
+            <section id="3">
+                <h2>3. SEO On-Page</h2>
+                <p>SEO On-Page é o fundamento do SEO que contempla todas as otimizações que você pode fazer dentro de
+                    uma
+                    página.
+                </p>
+                <p>Ao contrário do SEO Técnico, cujas otimizações impactam o site inteiro, o SEO On-Page trata de tudo o
+                    que
+                    é
+                    possível melhorar em termos de conteúdo, experiência do usuário e linkagem interna para que uma
+                    página
+                    alcance
+                    melhores posições em um mecanismo de busca.</p>
 
-        <footer>
-            <a href="#titulo1">Exemplo de âncora - link para o item 1</a>
-            <p>Aula Pweb - 2023</p>
-        </footer>
+                <h3>3.1 Title</h3>
+                <p>O título de uma página, ou sua tag <code>&lt;title&gt;</code>, é defendido por muitos profissionais
+                    de
+                    SEO
+                    como o
+                    seu
+                    elemento mais importante. Assim como a parte mais importante de um texto é o seu título, uma vez que
+                    é
+                    ele
+                    quem
+                    vai determinar se o leitor continuará ou não a sua leitura, o título de uma página é o fator de
+                    maior
+                    atenção
+                    quando falamos de resultados de pesquisa.</p>
+                <p>Isso acontece porque ela não estará visível somente no topo do seu navegador, mas também no seu
+                    snippet
+                    do
+                    Google.
+                </p>
+                <p>E o seu snippet é o seu cartão de visitas. É através dele que, em uma página de resultados, o usuário
+                    vai
+                    escolher
+                    clicar no seu site em detrimento de todos os seus outros concorrentes. Desenvolver um snippet que
+                    chame
+                    a
+                    atenção
+                    do seu usuário e o faça clicar no seu resultado é a otimização de SEO mais importante de todas,
+                    inclusive
+                    porque
+                    o
+                    seu CTR na SERP não é um fator de ranqueamento direto, mas possui grande influência na hora de dizer
+                    ao
+                    Google o
+                    quanto o seu site corresponde à intenção de busca dos seus usuários.</p>
+                <p>Para desenvolver um bom título na SERP é preciso garantir que a sua palavra-chave principal esteja o
+                    mais
+                    à
+                    esquerda possível, mesmo que ela não possa ser a primeira palavra deste título. Isso vai garantir
+                    que
+                    ela
+                    seja
+                    lida primeiro pelo usuário, dando a ele, de maneira primária, a ideia de que aquele resultado
+                    corresponde à
+                    sua
+                    intenção.</p>
+                <p>Um bom título deve possuir entre 50 e 60 caracteres.</p>
+                <p>Dentro da sua página, o seu título é definido pela tag <code>&lt;title&gt;</code>, que fica dentro da
+                    seção
+                    <code>&lt;head&gt;</code> do HTML.
+                </p>
 
-    </div>
+                <h3>3.2 Meta description</h3>
+                <p>Após o seu título, a sua meta description é o segundo elemento mais importante dentro do seu snippet.
+                    Mas,
+                    diferentemente do título, essa tag não tem visibilidade dentro da página, somente nos resultados de
+                    busca.
+                </p>
+                <p>Meta description é a pequena descrição de poucas linhas que fica logo abaixo da URL em exibição no
+                    seu
+                    snippet.
+                </p>
+                <p>Se o seu título possui o maior poder de atração por ser o elemento em maior evidência, a meta
+                    description
+                    é o
+                    seu
+                    complemento. Nela cabem todas as informações relevantes que não couberam no título.</p>
+                <p>Todas as dicas práticas para construir um bom título também podem se aplicar ao desenvolvimento de
+                    uma
+                    boa
+                    descrição: seja claro, direto, exponha o seu conteúdo ou produto da maneira mais assertiva possível
+                    em
+                    poucas
+                    palavras. Leve em consideração, principalmente, a visualização mobile deste snippet.</p>
+                <p>Uma boa meta description deve possuir cerca de 155 caracteres.</p>
+                <p>Para complementar ainda mais o seu snippet, você pode incluir uma thumb, uma pequena imagem que pode
+                    dar
+                    um
+                    grande
+                    destaque visual ao seu resultado.</p>
+            </section>
+            <section id="4">
+                <h2>4. Conclusão</h2>
+                <p>Em um cenário cada vez mais digital e competitivo, a compreensão das estratégias de Search Engine
+                    Optimization
+                    (SEO) se torna vital para empresas e criadores de conteúdo que buscam aumentar sua visibilidade e
+                    atrair
+                    tráfego
+                    qualificado. Este trabalho explorou de forma abrangente os principais aspectos do SEO, desde o
+                    funcionamento
+                    dos
+                    mecanismos de busca até as técnicas de otimização on-page.</p>
+                <p>Ficou claro que o SEO vai muito além de simplesmente ajustar palavras-chave em uma página. Trata-se
+                    de
+                    compreender
+                    profundamente como os motores de busca operam, desde o rastreamento de páginas até a classificação
+                    com
+                    base
+                    em
+                    algoritmos complexos. O processo de otimização não apenas impacta a posição nos resultados de
+                    pesquisa,
+                    mas
+                    também a experiência do usuário e a percepção da marca.</p>
+
+                <p>Além disso, fica evidente que o SEO é uma disciplina em constante evolução. O Google, como principal
+                    mecanismo de
+                    busca, adapta-se continuamente, ajustando seus algoritmos para fornecer resultados mais relevantes e
+                    precisos.
+                    Portanto, o engajamento em práticas de SEO deve ser dinâmico, acompanhando as tendências e
+                    atualizações
+                    para
+                    manter uma presença online bem-sucedida.</p>
+
+                <p>Em última análise, a aplicação eficaz das técnicas de SEO pode resultar em um impacto significativo
+                    nos
+                    resultados
+                    comerciais e na visibilidade online. À medida que as empresas e profissionais de marketing se
+                    esforçam
+                    para
+                    se
+                    destacar em um mar de informações, o conhecimento e a aplicação das estratégias de SEO oferecem uma
+                    vantagem
+                    competitiva crucial, direcionando o público certo para o conteúdo certo. Portanto, o SEO não é
+                    apenas
+                    uma
+                    ferramenta, mas sim um pilar essencial na construção de uma presença digital bem-sucedida e
+                    duradoura.
+                </p>
+            </section>
+
+            <section id="5" class="referencias">
+                <h2>5. Referências</h2>
+                <ul>
+                    <li>DIEGO IVO, “Guia de SEO para Iniciantes: o que é Search Engine Optimization?” Disponível em: <a
+                            href="https://www.conversion.com.br/blog/o-que-e-seo/">https://www.conversion.com.br/blog/o-que-e-seo/</a>
+                        Acesso em: 16 Ago. 2023.</li>
+                    <li>OPENAI, Disponível em <a href="https://chat.openai.com/">https://chat.openai.com/</a> Acesso em:
+                        16
+                        Ago.
+                        2023.
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
