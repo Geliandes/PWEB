@@ -1,13 +1,11 @@
 html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 div {
     width: 500px;
     height: 500px;
-    border: 1px solid black;
 }
 
 h2 {
