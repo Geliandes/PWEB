@@ -4,7 +4,7 @@ const n2 = parseFloat(prompt("Digite o segundo numero"));
 alert(
   "Soma: " +
     (n1 + n2).toFixed(2) +
-    "\nMenos: " +
+    "\nSubtração: " +
     (n1 - n2).toFixed(2) +
     "\nProduto: " +
     (n1 * n2).toFixed(2) +
