@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const age = 20;
+
+      const allowed = age >= 16 ? "Permitido votar" : "Não permitido votar";
+      alert(allowed);
+
+      function x() {
+        return "A";
+      }
+      function y() {
+        return "B";
+      }
+      function z() {
+        return "C";
+      }
+
+      var x = (x(), y(), z());
+      alert(x);
+
+      var s = "";
+
+      for (var i = 0, j = 9; i <= 9; i++, j--) {
+        s += "[" + i + "][" + j + "]";
+      }
+      alert(s);
+
+      const obj = {
+        nome: "Paulo",
+        endereco: "Casa",
+        idade: 23,
+      };
+
+      alert(obj);
+      alert(obj.nome, obj.endereco, obj.idade);
+
+      alert(JSON.stringify(obj));
+      delete obj.endereco;
+      alert(JSON.stringify(obj));
+
+      const fruits = ["apple", "banana", "orange"];
+
+      alert(1 in fruits);
+      alert("length" in fruits);
+
+      function Person(name) {
+        this.name = name;
+      }
+
+      const john = new Person("John");
+      alert(john.name);
+
+      var objP = new Object();
+      objP.nomepessoa = "Pedro";
+      alert(objP.nomepessoa);
+
+      alert(john instanceof Person);
+
+      function myFunc() {
+        alert(this);
+      }
+
+      myFunc();
+
+      var obj1 = {
+        teste: function () {
+          return this;
+        },
+      };
+
+      alert(obj1.teste());
+
+      var anObj = { job: "Sou umm objeto!" };
+      var aNumber = 42;
+      var aString = "Sou uma string!";
+
+      alert(typeof anObj);
+      alert(typeof aNumber);
+      alert(typeof aString);
+
+      const defaultValue = "Default Value";
+      const userInput = null;
+      const finalValue = userInput ?? defaultValue;
+      alert(finalValue);
+
+      const name = "Mary";
+      alert(name ?? "name is null");
+    </script>
+  </body>
+</html>
