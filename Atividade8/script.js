@@ -3,7 +3,7 @@ const maxNumber = (n1, n2, n3) => {
 };
 
 const orderByAsc = (n1, n2, n3) => {
-  const result = new Array(n1, n2, n3).sort(function (a, b) {
+  const result = new Array(n1, n2, n3).sort((a, b) => {
     return a - b;
   });
   return result;
