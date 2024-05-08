@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="window-container">
+      <h1>Janela Fechada</h1>
+      <div class="image-container" >
+        <img onclick="quebraJanela()" onmouseover="abreJanela()" onmouseout="fechaJanela()" src="./assets/janelafechada.png" alt="Janela aberta" />
+      </div>
+    </div>
+
+    <script>
+      const janela = document.querySelector('img');
+      const heading = document.querySelector('h1');
+
+      const quebraJanela = () => {
+        janela.setAttribute('src', './assets/janelaquebra.png');
+        heading.innerText = 'Janela Quebrada'
+      }
+
+      const abreJanela = () => {
+        janela.setAttribute('src', './assets/janelaaberta.png');
+        heading.innerText = 'Janela Aberta'
+      }
+
+      const fechaJanela = () => {
+        janela.setAttribute('src', './assets/janelafechada.png');
+        heading.innerText = 'Janela Fechada'
+      }
+    </script>
+  </body>
+</html>
