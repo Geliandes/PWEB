@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade14</title>   
+  </head>
+  <body>
+    <input oninput="handleInput()" id="input" name="input" type="text" />
+
+    <label for="maiusculo">Maiúsculo</label>
+    <input onclick="handleInput()" checked onclick="upperCase()" id="maiusculo" type="radio" name="radio-btn" />
+    <label for="minusculo">Minusculo</label>
+    <input onclick="handleInput()" id="minusculo" type="radio" name="radio-btn" />
+
+    <script>
+      const input = document.querySelector('#input');
+      const maiusculo = document.querySelector('#maiusculo');
+      const minusculo = document.querySelector('#minusculo');
+
+      const handleInput = () => {
+        if(maiusculo.checked) {
+          input.value = input.value.toUpperCase();
+        } else if (minusculo.checked) {
+          input.value = input.value.toLowerCase();
+        }
+        else {
+          console.log('nenhuma opção selecionada')
+        }
+      }
+
+    </script>
+  </body>
+</html>
