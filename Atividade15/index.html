@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./script.js"></script>
+    <div>
+        <form name="pweb" onsubmit="formValidation()">
+            <h1>Formulário Princial</h1>
+            
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" />
+            <label for="email" >E-mail</label>
+            <input id="email" name="email" />
+            <label for="comentario">Comentario</label>
+            <textarea type="text" id="comentario"></textarea>
+
+            <div class="wrapper">
+                <p><b>Pesquisa</b></p>
+                <p><em>Primeira vez nessa página</em></p>
+
+                <div>
+                    <input required type="radio" id="sim" name="radio" />
+                    <label for="sim">Sim</label>
+                    <input required type="radio" id="nao" name="radio" />
+                    <label for="nao">Não</label>
+                </div>
+
+                <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+ 
+</body>
+</html>
