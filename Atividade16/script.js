@@ -27,7 +27,9 @@ function handleClick(event) {
 
   if (confirm("Abrir em nova aba?")) {
     courses.forEach((course) =>
-      course.name === select.value ? window.open(course.url, "_blank") : null
+      course.name === select.value
+        ? window.open(course.url, "_blank", "popup, width=600, height=600")
+        : null
     );
   }
 }
