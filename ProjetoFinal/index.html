@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kanban - Projeto Final PWEB</title>
+    <meta name="description" content="Esse é um Kanban para o projeto final de PWEB da Fatec Sorocaba">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex">
+  </head>
+  <body>
+    <div class="initial-modal-container">
+      <div class="bg"></div>
+      <div class="container">
+        <div class="main-content-1">
+          <h1>Bem vindo(a) ao Kanban</h1>
+          <form id="initial-form">
+            <div class="initial-modal-name">
+              <label for="initial-name">Nome</label>
+              <input name="initial-name" type="text" placeholder="Insira o seu nome">
+            </div>
+          </form>
+        </div>
+        <div class="main-content-2">
+          <div class="greeting-container">
+            <h1 id="greeting"></h1>
+            <p id="date"></p>
+          </div>
+          <div class="kanban-tables-wrapper">
+            <div class="kanban-table kanban-table-1" data-status="a-fazer" ondragover="allowDrop(event)" ondrop="drop(event)">
+              <div class="kanban-table-header">
+                <p>A Fazer</p>
+                <span>+ Add</span>
+              </div>
+            </div>
+            <div class="kanban-table kanban-table-2" data-status="em-andamento" ondragover="allowDrop(event)" ondrop="drop(event)">
+              <div class="kanban-table-header">
+                <p>Em Andamento</p>
+                <span>+ Add</span>
+              </div>
+            </div>
+            <div class="kanban-table kanban-table-3" data-status="review" ondragover="allowDrop(event)" ondrop="drop(event)">
+              <div class="kanban-table-header">
+                <p>Review</p>
+                <span>+ Add</span>
+              </div>
+            </div>
+            <div class="kanban-table kanban-table-4" data-status="feito" ondragover="allowDrop(event)" ondrop="drop(event)">
+              <div class="kanban-table-header">
+                <p>Feito</p>
+                <span>+ Add</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="taskModal" style="display: none;">
+          <div class="modal-content">
+            <svg class="close-button" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"></path>
+            </svg>
+            <form id="taskForm">
+              <label for="title">Título:</label>
+              <input type="text" id="title" name="title" required>
+              <label for="description">Descrição:</label>
+              <textarea id="description" name="description" required></textarea>
+              <div class="taskFormWrapper">
+                <div class="flex-column">
+                  <label for="priority">Prioridade:</label>
+                  <select id="priority" name="priority">
+                    <option value="Baixa" selected>Baixa</option>
+                    <option value="Media">Média</option>
+                    <option value="Alta">Alta</option>
+                  </select>
+                </div>
+                <div class="flex-column">
+                  <label for="dueDate">Data de Vencimento:</label>
+                  <input type="date" id="dueDate" name="dueDate" required>
+                </div>
+              </div>
+              <label for="assignees">Responsável:</label>
+              <input type="text" id="assignees" name="assignees" required>
+              <label for="status">Status:</label>
+              <select id="status" name="status">
+                <option value="a-fazer">A Fazer</option>
+                <option value="em-andamento">Em Andamento</option>
+                <option value="review">Review</option>
+                <option value="feito">Feito</option>
+              </select>
+              <div class="action-btns">
+                <button class="cancel">Cancelar</button>
+                <button type="submit" value="Salvar Tarefa">Salvar Tarefa</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
