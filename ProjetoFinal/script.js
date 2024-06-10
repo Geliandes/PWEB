@@ -127,7 +127,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function formatDate(dateString) {
     const options = { day: "2-digit", month: "2-digit", year: "numeric" };
-    return new Date(dateString).toLocaleDateString("pt-BR", options);
+    const normalizedDate = getNormalizedDate(dateString);
+    return normalizedDate.toLocaleDateString("pt-BR", options);
+  }
+
+  function getNormalizedDate(input) {
+    let date = new Date(input);
+    date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+    const dateString = date.toISOString().split("T")[0] + "T03:00:00-03:00";
+    return new Date(dateString);
+  }
+
+  function getBorderColorClass(dueDate) {
+    const today = getNormalizedDate(new Date());
+    const taskDueDate = getNormalizedDate(dueDate);
+
+    if (taskDueDate > today) {
+      return "border-green";
+    } else if (taskDueDate.getTime() === today.getTime()) {
+      return "border-yellow";
+    } else {
+      return "border-red";
+    }
   }
 
   function addTaskToDOM(task) {
@@ -135,9 +156,13 @@ document.addEventListener("DOMContentLoaded", function () {
     taskCard.classList.add("task-card");
     taskCard.id = task.id;
     taskCard.draggable = true;
+
+    const borderColorClass = getBorderColorClass(task.dueDate);
+    taskCard.classList.add(borderColorClass);
+
     taskCard.innerHTML = `<h3>${task.title}</h3><p>${formatDate(
       task.dueDate
-    )}</p><span class="priority priority-${task.priority.toLowerCase()}"></span>`;
+    )}</p><div class="priority-container">Prioridade<span class="priority priority-${task.priority.toLowerCase()}"></span></div>`;
     taskCard.addEventListener("click", function () {
       editTask(task.id);
     });
@@ -171,9 +196,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const previousColumn = taskCard.closest(".kanban-table");
       previousColumn.removeChild(taskCard);
 
+      const borderColorClass = getBorderColorClass(updatedTask.dueDate);
+      taskCard.className = "task-card"; // Reinicia as classes
+      taskCard.classList.add(borderColorClass);
+
       taskCard.innerHTML = `<h3>${updatedTask.title}</h3><p>${formatDate(
         updatedTask.dueDate
-      )}</p><span class="priority priority-${updatedTask.priority.toLowerCase()}"></span>`;
+      )}</p><div class="priority-container">Prioridade<span class="priority priority-${updatedTask.priority.toLowerCase()}"></span></div>`;
 
       const targetColumn = document.querySelector(
         `.kanban-table[data-status="${updatedTask.status}"]`
