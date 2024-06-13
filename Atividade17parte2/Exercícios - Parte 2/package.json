@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "author": "filipe lamego",
+  "author": "Paulo Geliandes",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.3"
